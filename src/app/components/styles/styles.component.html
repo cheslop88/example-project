@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Sample Project</h1>
+    <h2>Bootstrap Standard</h2>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <hr/>
+    <h2>ng-Bootstrap</h2>
+    <a href="https://ng-bootstrap.github.io/#/home">https://ng-bootstrap.github.io/#/home</a><br/>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn-primary" ngbButtonLabel>
+        <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+      </label>
+      <label class="btn-primary" ngbButtonLabel>
+        <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+      </label>
+      <label class="btn-primary" ngbButtonLabel>
+        <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+      </label>
+    </div>
+
+    <hr>
+    <pre>{{model | json}}</pre>
+    <hr/>
+    <h2>Angular Material</h2>
+    <a href="https://material.angular.io">https://material.angular.io/</a><br/>
+    <md-checkbox>Check me!</md-checkbox>
+    <md-slide-toggle>Slide me!</md-slide-toggle>
+    <hr/>
+    <h2>Param Component</h2>
+    <button routerLink="/styles/2">Param</button>
+    <router-outlet></router-outlet>
+  </div>
